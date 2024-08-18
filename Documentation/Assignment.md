@@ -88,7 +88,7 @@ Steps:
 
 5. What pin on the chip is tied to the potentiometer?
 
-## Extra-Credit Opportunities (5pts for any of the following)
+## Ideas for Credit to get to 'A' & Extra-Credit (2 pts for any)
 
 * In addition to the changing digits, there is a serial output terminal stream that is reporting status abut every second or so.  Connect a terminal emulator to this stream (Windows: 'PuTTY' or 'Tera Term', Mac: 'screen') and paste a line from its output.
 
