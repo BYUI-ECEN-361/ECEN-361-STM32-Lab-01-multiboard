@@ -82,6 +82,17 @@ void OneSecond_Show_Potentiometer__ISRFunc(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+/**
+  * @brief System Clock Configuration
+  * @retval None
+  */
+void OneSecond_Show_Potentiometer__ISRFunc(void)
+	{
+	// printf("Got to the show Pot ISR");
+	// HAL_Delay(1);
+	printf("Current Tick:  %lu    :   Raw Pot Value: %u   Delay between number update: %d\n\r",uwTick,ADC_Result,Increment_Delay);
+	// HAL_Delay(1);
+	}
 
 /* USER CODE END 0 */
 
@@ -180,24 +191,12 @@ int main(void)
 	if (TimeToPrint) {
 		OneSecond_Show_Potentiometer__ISRFunc();
 		TimeToPrint=0;
-	}
-
-
+    }
   }
+
   /* USER CODE END 3 */
 }
 
-/**
-  * @brief System Clock Configuration
-  * @retval None
-  */
-void OneSecond_Show_Potentiometer__ISRFunc(void)
-	{
-	// printf("Got to the show Pot ISR");
-	// HAL_Delay(1);
-	printf("Current Tick:  %lu    :   Raw Pot Value: %u   Delay between number update: %d\n\r",uwTick,ADC_Result,Increment_Delay);
-	// HAL_Delay(1);
-	}
 
 
 
