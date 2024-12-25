@@ -2,7 +2,7 @@
 
 ## Introduction and Objective of the Lab
 
-With the change away from the TI-MSP432 board (obsoleted) there are likely some in this class who are unfamiliar with the development environment comes with the new board to be used: STMicro’s STM32-Nucleo-F476RG. Both boards are centered on an ARM-Cortex processor and most of the fundamental principles learned in the pre-requisite ECEN-260 are unchanged.
+With the change away from the TI-MSP432 board (obsoleted) there are likely some in this class who are unfamiliar with the development environment that comes with the new board to be used: STMicro’s STM32-Nucleo-F476RG. Both boards are centered on an ARM-Cortex processor and most of the fundamental principles learned in the pre-requisite ECEN-260 are unchanged.
 
 Similarly, the integrated development environment (IDE) will necessarily change from T.I.’s Code Composer Studio, to STMicro’s customized one: STM32CubeIDE. Both of these IDEs, however, are based on the open-source Eclipse framework and the transition should be very simple.
 
@@ -37,7 +37,7 @@ When completed answer the following questions. Add your answers by editing this 
 
 3. What GPIO Pin is tied to the LED on the board?
 
-4. At what frequency did your light blink?
+4. At what frequency did your light toggle?
 
 5. What does the “bug” button do?
 
@@ -60,7 +60,7 @@ Steps:
 3. Install the MultiFunction Example application by doing the following:
    
    1. Open STM32CubeIDE
-   2. Note the directory into which you cloned the repository. Bring it into your STM32CubeIDE workspace with: File/Import/\<*your directory name*\>
+   2. Note the directory into which you cloned the repository. Bring it into your STM32CubeIDE workspace with: File/Import/\<*your directory name*\>. You can also import the project by opening the `.project' file.
    3. Plug in the board to the USB, clean/build/run the project (e.g., the bug button mentioned earlier!)
 
 4. Experiment with the buttons, note the operation. Look at the code in :  
@@ -78,11 +78,11 @@ Steps:
 
 ### Part 2: Questions (5pts)
 
-1. What does switch 1 (S1) do?
+1. What does button 1 (S1) do?
 
-2. What does switch 2 (S2) do?
+2. What does button 2 (S2) do?
 
-3. What does switch 3 (S3) do?
+3. What does button 3 (S3) do?
 
 4. What variable would you change to make the first number shown on the 7-segment digits be ‘1234’?
 
@@ -92,4 +92,4 @@ Steps:
 
 * In addition to the changing digits, there is a serial output terminal stream that is reporting status abut every second or so.  Connect a terminal emulator to this stream (Windows: 'PuTTY' or 'Tera Term', Mac: 'screen') and paste a line from its output.
 
-* What does the potentiometer do in the program
+* What does the potentiometer do in the program?
